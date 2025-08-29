@@ -62,7 +62,7 @@ for (const point of points) {
             <p class="font-bold text-black">${title}</p>
           <p class="text-xs text-gray-400">${number}</p>
           </div>
-          <p class="text-xs text-gray-400">${new Date().toLocaleTimeString()}</p>
+          <p class="text-xs text-black">${new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric',second:'numeric',hour12:true })}</p>
         </div>
         `;
         historyContainer.appendChild(div);
