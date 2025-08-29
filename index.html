@@ -24,15 +24,15 @@
         <!-- Right: Counters -->
         <div class="flex flex-col lg:flex-row gap-3 mt-3 lg:mt-0">
             <div class="flex items-center  bg-[#41ff6b1a] rounded-xl  p-3  ">
-                <span class="text-black font-bold mr-2" >0</span>
+                <span id="heart-count" class="text-black font-bold mr-2" >0</span>
                 <img src="assets/heart.png" alt="Heart" class="w-7 h-7">
             </div>
             <div class="flex items-center  bg-[#41ff6b1a] rounded-xl  p-3">
-                <span class="text-black font-bold mr-2">100</span>
+                <span id="point-count" class="text-black font-bold mr-2">100</span>
                 <img src="assets/coin.png" alt="Coin" class="w-7 h-7">
             </div>
             <div class="flex items-center  bg-[#00a63e] rounded-xl  p-3">
-                <span class="text-white font-semibold mr-2">0</span>
+                <span id="copy-count" class="text-white font-semibold mr-2 ">0</span>
                 <h2 class="text-white font-semibold">Copy</h2>
             </div>
         </div>
@@ -65,23 +65,23 @@
     <!--Left: Cards All -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:w-[1370px] lg:h-[1140px]  p-4 rounded mb-6 lg:mb-0">
       <!-- Card 1 -->
-      <div class="bg-white rounded-lg shadow-lg  p-8 flex flex-col justify-between">
+      <div class="card-search bg-white rounded-lg shadow-lg  p-8 flex flex-col justify-between">
         <div class="flex flex-col items-start gap-3">
           <div class="flex justify-between w-full">
             <div class="bg-[#ffe3e2] w-14 h-14 rounded-lg flex justify-center items-center">
             <img src="assets/emergency.png" alt="" class="w-8 h-8">
           </div>
-          <div>
+          <div class="hearts">
             <i class="fa-regular fa-heart"></i>
           </div>
           </div>
           <div>
-             <p class="text-lg font-bold">Emergency Number</p>
+             <p class="card-title text-lg font-bold">Emergency Number</p>
             <p class="text-xs font-semibold text-gray-400">Emergency Service</p>
             <br>
             <br>
             <br>
-            <p class="text-lg font-bold">999</p>
+            <p class="card-number text-lg font-bold">999</p>
           </div>
           <div class="bg-[#f2f2f2] rounded-3xl w-auto h-9 p-3 flex justify-center items-center mt-0">
             <p class="text-xs font-semibold text-gray-400 m-0">Emergency</p>
@@ -89,31 +89,31 @@
           </div>
         </div>
         <div class="flex items-center gap-2 mt-4">
-          <button  class="bg-[#f2f2f2] w-1/2  text-[#5c5c5c] font-semibold border border-[#d4d6d5] text-sm px-4 py-1 rounded-lg"> <i class="fa-regular fa-copy"></i>
+          <button  class="copy-text  w-1/2  text-[#5c5c5c] font-semibold border border-[#d4d6d5] text-sm px-4 py-1 rounded-lg"> <i class="fa-regular fa-copy"></i>
              Copy</button>
-          <button class="ml-auto w-1/2 bg-green-600 text-white text-sm px-4 py-1 rounded-lg "><i class="fa-solid fa-phone"></i> Call</button>
+          <button class=" points ml-auto w-1/2 bg-green-600 text-white text-sm px-4 py-1 rounded-lg "><i class="fa-solid fa-phone"></i> Call</button>
         </div>
       </div>
 
      
       <!-- Card 2 -->
-      <div class="bg-white rounded-lg shadow-lg  p-8 flex flex-col justify-between">
+      <div class="card-search bg-white rounded-lg shadow-lg  p-8 flex flex-col justify-between">
         <div class="flex flex-col items-start gap-3">
           <div class="flex justify-between w-full">
             <div class="bg-[#dfefff] w-14 h-14 rounded-lg flex justify-center items-center">
             <img src="assets/police.png" alt="" class="w-8 h-8">
           </div>
-          <div>
+          <div class="hearts">
            <i class="fa-regular fa-heart"></i>
           </div>
           </div>
           <div>
-             <p class="text-lg font-bold">Police Help Line</p>
+             <p class="card-title text-lg font-bold">Police Help Line</p>
             <p class="text-xs font-semibold text-gray-400">Police Help</p>
             <br>
             <br>
             <br>
-            <p class="text-lg font-bold">999</p>
+            <p class="card-number text-lg font-bold">999</p>
           </div>
           <div class="bg-[#f2f2f2] rounded-3xl w-auto h-9 p-3 flex justify-center items-center mt-0">
             <p class="text-xs font-semibold text-gray-400 m-0">Police</p>
@@ -121,31 +121,31 @@
           </div>
         </div>
         <div class="flex items-center gap-2 mt-4">
-          <button  class="bg-[#f2f2f2] w-1/2  text-[#5c5c5c] font-semibold border border-[#d4d6d5] text-sm px-4 py-1 rounded-lg"> <i class="fa-regular fa-copy"></i>
+          <button  class="copy-text w-1/2  text-[#5c5c5c] font-semibold border border-[#d4d6d5] text-sm px-4 py-1 rounded-lg"> <i class="fa-regular fa-copy"></i>
              Copy</button>
-          <button class="ml-auto w-1/2 bg-green-600 text-white text-sm px-4 py-1 rounded-lg "><i class="fa-solid fa-phone"></i> Call</button>
+          <button class="points ml-auto w-1/2 bg-green-600 text-white text-sm px-4 py-1 rounded-lg "><i class="fa-solid fa-phone"></i> Call</button>
         </div>
       </div>
 
      
       <!-- Card 3 -->
-      <div class="bg-white rounded-lg shadow-lg  p-8 flex flex-col justify-between">
+      <div class="card-search bg-white rounded-lg shadow-lg  p-8 flex flex-col justify-between">
         <div class="flex flex-col items-start gap-3">
           <div class="flex justify-between w-full">
             <div class="bg-[#ffe3e2] w-14 h-14 rounded-lg flex justify-center items-center">
             <img src="assets/fire-service.png" alt="" class="w-8 h-8">
           </div>
-          <div>
+          <div class="hearts">
             <i class="fa-regular fa-heart"></i>
           </div>
           </div>
           <div>
-             <p class="text-lg font-bold">Fire Service Number</p>
+             <p class="card-title text-lg font-bold">Fire Service Number</p>
             <p class="text-xs font-semibold text-gray-400">Fire Service</p>
             <br>
             <br>
             <br>
-            <p class="text-lg font-bold">199</p>
+            <p class="card-number text-lg font-bold">199</p>
           </div>
           <div class="bg-[#f2f2f2] rounded-3xl w-auto h-9 p-3 flex justify-center items-center mt-0">
             <p class="text-xs font-semibold text-gray-400 m-0">Fire</p>
@@ -153,31 +153,31 @@
           </div>
         </div>
         <div class="flex items-center gap-2 mt-4">
-          <button  class="bg-[#f2f2f2] w-1/2  text-[#5c5c5c] font-semibold border border-[#d4d6d5] text-sm px-4 py-1 rounded-lg"> <i class="fa-regular fa-copy"></i>
+          <button  class="copy-text  w-1/2  text-[#5c5c5c] font-semibold border border-[#d4d6d5] text-sm px-4 py-1 rounded-lg"> <i class="fa-regular fa-copy"></i>
              Copy</button>
-          <button class="ml-auto w-1/2 bg-green-600 text-white text-sm px-4 py-1 rounded-lg "><i class="fa-solid fa-phone"></i> Call</button>
+          <button class="points ml-auto w-1/2 bg-green-600 text-white text-sm px-4 py-1 rounded-lg "><i class="fa-solid fa-phone"></i> Call</button>
         </div>
       </div>
 
      
       <!-- Card 4 -->
-      <div class="bg-white rounded-lg shadow-lg  p-8 flex flex-col justify-between">
+      <div class="card-search bg-white rounded-lg shadow-lg  p-8 flex flex-col justify-between">
         <div class="flex flex-col items-start gap-3">
           <div class="flex justify-between w-full">
             <div class="bg-[#ffe3e2] w-14 h-14 rounded-lg flex justify-center items-center">
             <img src="assets/ambulance.png" alt="" class="w-8 h-8">
           </div>
-          <div>
+          <div class="hearts">
             <i class="fa-regular fa-heart"></i>
           </div>
           </div>
           <div>
-             <p class="text-lg font-bold">Ambulance Number</p>
+             <p class="card-title text-lg font-bold">Ambulance Number</p>
             <p class="text-xs font-semibold text-gray-400">Ambulance Service</p>
             <br>
             <br>
             <br>
-            <p class="text-lg font-bold">999</p>
+            <p class="card-number text-lg font-bold">999</p>
           </div>
           <div class="bg-[#f2f2f2] rounded-3xl w-auto h-9 p-3 flex justify-center items-center mt-0">
             <p class="text-xs font-semibold text-gray-400 m-0">Ambulance</p>
@@ -185,31 +185,31 @@
           </div>
         </div>
         <div class="flex items-center gap-2 mt-4">
-          <button  class="bg-[#f2f2f2] w-1/2  text-[#5c5c5c] font-semibold border border-[#d4d6d5] text-sm px-4 py-1 rounded-lg"> <i class="fa-regular fa-copy"></i>
+          <button  class="copy-text  w-1/2  text-[#5c5c5c] font-semibold border border-[#d4d6d5] text-sm px-4 py-1 rounded-lg"> <i class="fa-regular fa-copy"></i>
              Copy</button>
-          <button class="ml-auto w-1/2 bg-green-600 text-white text-sm px-4 py-1 rounded-lg "><i class="fa-solid fa-phone"></i> Call</button>
+          <button class="points ml-auto w-1/2 bg-green-600 text-white text-sm px-4 py-1 rounded-lg "><i class="fa-solid fa-phone"></i> Call</button>
         </div>
       </div>
 
      
       <!-- Card 5 -->
-      <div class="bg-white rounded-lg shadow-lg  p-8 flex flex-col justify-between">
+      <div class="card-search bg-white rounded-lg shadow-lg  p-8 flex flex-col justify-between">
         <div class="flex flex-col items-start gap-3">
           <div class="flex justify-between w-full">
             <div class="bg-[#ffe3e2] w-14 h-14 rounded-lg flex justify-center items-center">
             <img src="assets/Bangladesh-Railway.png" alt="" class="w-8 h-8">
           </div>
-          <div>
+          <div class="hearts">
             <i class="fa-regular fa-heart"></i>
           </div>
           </div>
           <div>
-             <p class="text-lg font-bold">Railway Service Number</p>
+             <p class="card-title text-lg font-bold">Railway Service Number</p>
             <p class="text-xs font-semibold text-gray-400">Railway Service</p>
             <br>
             <br>
             <br>
-            <p class="text-lg font-bold">131</p>
+            <p class="card-number text-lg font-bold">131</p>
           </div>
           <div class="bg-[#f2f2f2] rounded-3xl w-auto h-9 p-3 flex justify-center items-center mt-0">
             <p class="text-xs font-semibold text-gray-400 m-0">Railway</p>
@@ -217,31 +217,31 @@
           </div>
         </div>
         <div class="flex items-center gap-2 mt-4">
-          <button  class="bg-[#f2f2f2] w-1/2  text-[#5c5c5c] font-semibold border border-[#d4d6d5] text-sm px-4 py-1 rounded-lg"> <i class="fa-regular fa-copy"></i>
+          <button  class="copy-text  w-1/2  text-[#5c5c5c] font-semibold border border-[#d4d6d5] text-sm px-4 py-1 rounded-lg"> <i class="fa-regular fa-copy"></i>
              Copy</button>
-          <button class="ml-auto w-1/2 bg-green-600 text-white text-sm px-4 py-1 rounded-lg "><i class="fa-solid fa-phone"></i> Call</button>
+          <button class="points ml-auto w-1/2 bg-green-600 text-white text-sm px-4 py-1 rounded-lg "><i class="fa-solid fa-phone"></i> Call</button>
         </div>
       </div>
 
      
       <!-- Card 6 -->
-      <div class="bg-white rounded-lg shadow-lg  p-8 flex flex-col justify-between">
+      <div class="card-search bg-white rounded-lg shadow-lg  p-8 flex flex-col justify-between">
         <div class="flex flex-col items-start gap-3">
           <div class="flex justify-between w-full">
             <div class="bg-[#ffe3e2] w-14 h-14 rounded-lg flex justify-center items-center">
             <img src="assets/emergency.png" alt="" class="w-8 h-8">
           </div>
-          <div>
+          <div class="hearts">
             <i class="fa-regular fa-heart"></i>
           </div>
           </div>
           <div>
-             <p class="text-lg font-bold">Anti-Coruption Help Line</p>
+             <p class="card-title text-lg font-bold">Anti-Coruption Help Line</p>
             <p class="text-xs font-semibold text-gray-400">Help Service</p>
             <br>
             <br>
             <br>
-            <p class="text-lg font-bold">999</p>
+            <p class="card-number text-lg font-bold">999</p>
           </div>
           <div class="bg-[#f2f2f2] rounded-3xl w-auto h-9 p-3 flex justify-center items-center mt-0">
             <p class="text-xs font-semibold text-gray-400 m-0">Help</p>
@@ -249,31 +249,31 @@
           </div>
         </div>
         <div class="flex items-center gap-2 mt-4">
-          <button  class="bg-[#f2f2f2] w-1/2  text-[#5c5c5c] font-semibold border border-[#d4d6d5] text-sm px-4 py-1 rounded-lg"> <i class="fa-regular fa-copy"></i>
+          <button  class="copy-text  w-1/2  text-[#5c5c5c] font-semibold border border-[#d4d6d5] text-sm px-4 py-1 rounded-lg"> <i class="fa-regular fa-copy"></i>
              Copy</button>
-          <button class="ml-auto w-1/2 bg-green-600 text-white text-sm px-4 py-1 rounded-lg "><i class="fa-solid fa-phone"></i> Call</button>
+          <button class="points ml-auto w-1/2 bg-green-600 text-white text-sm px-4 py-1 rounded-lg "><i class="fa-solid fa-phone"></i> Call</button>
         </div>
       </div>
 
      
       <!-- Card 7 -->
-      <div class="bg-white rounded-lg shadow-lg  p-8 flex flex-col justify-between">
+      <div class="card-search bg-white rounded-lg shadow-lg  p-8 flex flex-col justify-between">
         <div class="flex flex-col items-start gap-3">
           <div class="flex justify-between w-full">
             <div class="bg-[#ffe3e2] w-14 h-14 rounded-lg flex justify-center items-center">
             <img src="assets/brac.png" alt="" class="w-8 h-8">
           </div>
-          <div>
+          <div class="hearts">
             <i class="fa-regular fa-heart"></i>
           </div>
           </div>
           <div>
-             <p class="text-lg font-bold">Brac Bank Help Line</p>
+             <p class="card-title text-lg font-bold">Brac Bank Help Line</p>
             <p class="text-xs font-semibold text-gray-400">Call Service</p>
             <br>
             <br>
             <br>
-            <p class="text-lg font-bold">16221</p>
+            <p class="card-number text-lg font-bold">16221</p>
           </div>
           <div class="bg-[#f2f2f2] rounded-3xl w-auto h-9 p-3 flex justify-center items-center mt-0">
             <p class="text-xs font-semibold text-gray-400 m-0">Brac</p>
@@ -281,31 +281,32 @@
           </div>
         </div>
         <div class="flex items-center gap-2 mt-4">
-          <button  class="bg-[#f2f2f2] w-1/2  text-[#5c5c5c] font-semibold border border-[#d4d6d5] text-sm px-4 py-1 rounded-lg"> <i class="fa-regular fa-copy"></i>
+          <button  class="copy-text  w-1/2  text-[#5c5c5c] font-semibold border border-[#d4d6d5] text-sm px-4 py-1 rounded-lg"> <i class="fa-regular fa-copy"></i>
              Copy</button>
-          <button class="ml-auto w-1/2 bg-green-600 text-white text-sm px-4 py-1 rounded-lg "><i class="fa-solid fa-phone"></i> Call</button>
+          <button class="points ml-auto w-1/2 bg-green-600 text-white text-sm px-4 py-1 rounded-lg "><i class="fa-solid fa-phone"></i> Call</button>
         </div>
       </div>
 
      
       <!-- Card  8-->
-      <div class="bg-white rounded-lg shadow-lg  p-8 flex flex-col justify-between">
+      <div class="card-search bg-white rounded-lg shadow-lg  p-8 flex flex-col justify-between">
         <div class="flex flex-col items-start gap-3">
           <div class="flex justify-between w-full">
             <div class="bg-[#ffe3e2] w-14 h-14 rounded-lg flex justify-center items-center">
             <img src="assets/logo-dark.png" alt="" class="w-8 h-8">
           </div>
-          <div>
+          <div class="hearts">
             <i class="fa-regular fa-heart"></i>
           </div>
           </div>
           <div>
-             <p class="text-lg font-bold">National Emergency </p>
+             <p class="card-title text-lg font-bold">National Emergency </p>
             <p class="text-xs font-semibold text-gray-400">Emergency Service</p>
             <br>
             <br>
             <br>
-            <p class="text-lg font-bold">1994</p>
+            <p class="card-number text-lg font-bold">1994</p>
+           
           </div>
           <div class="bg-[#f2f2f2] rounded-3xl w-auto h-9 p-3 flex justify-center items-center mt-0">
             <p class="text-xs font-semibold text-gray-400 m-0">Emergency</p>
@@ -313,31 +314,31 @@
           </div>
         </div>
         <div class="flex items-center gap-2 mt-4">
-          <button  class="bg-[#f2f2f2] w-1/2  text-[#5c5c5c] font-semibold border border-[#d4d6d5] text-sm px-4 py-1 rounded-lg"> <i class="fa-regular fa-copy"></i>
+          <button  class="copy-text  w-1/2  text-[#5c5c5c] font-semibold border border-[#d4d6d5] text-sm px-4 py-1 rounded-lg"> <i class="fa-regular fa-copy"></i>
              Copy</button>
-          <button class="ml-auto w-1/2 bg-green-600 text-white text-sm px-4 py-1 rounded-lg "><i class="fa-solid fa-phone"></i> Call</button>
+          <button class="points ml-auto w-1/2 bg-green-600 text-white text-sm px-4 py-1 rounded-lg "><i class="fa-solid fa-phone"></i> Call</button>
         </div>
       </div>
 
      
       <!-- Card  9-->
-      <div class="bg-white rounded-lg shadow-lg  p-8 flex flex-col justify-between">
+      <div class="card-search bg-white rounded-lg shadow-lg  p-8 flex flex-col justify-between">
         <div class="flex flex-col items-start gap-3">
           <div class="flex justify-between w-full">
             <div class="bg-[#ffe3e2] w-14 h-14 rounded-lg flex justify-center items-center">
             <img src="assets/emergency.png" alt="" class="w-8 h-8">
           </div>
-          <div>
+          <div class="hearts">
             <i class="fa-regular fa-heart"></i>
           </div>
           </div>
           <div>
-             <p class="text-lg font-bold">Electricity Emergency</p>
+             <p class="card-title text-lg font-bold">Electricity Emergency</p>
             <p class="text-xs font-semibold text-gray-400">Emergency Service</p>
             <br>
             <br>
             <br>
-            <p class="text-lg font-bold">999</p>
+            <p class="card-number text-lg font-bold">999</p>
           </div>
           <div class="bg-[#f2f2f2] rounded-3xl w-auto h-9 p-3 flex justify-center items-center mt-0">
             <p class="text-xs font-semibold text-gray-400 m-0">Emergency</p>
@@ -345,22 +346,14 @@
           </div>
         </div>
         <div class="flex items-center gap-2 mt-4">
-          <button  class="bg-[#f2f2f2] w-1/2  text-[#5c5c5c] font-semibold border border-[#d4d6d5] text-sm px-4 py-1 rounded-lg"> <i class="fa-regular fa-copy"></i>
+          <button  class="copy-text  w-1/2  text-[#5c5c5c] font-semibold border border-[#d4d6d5] text-sm px-4 py-1 rounded-lg"> <i class="fa-regular fa-copy"></i>
              Copy</button>
-          <button class="ml-auto w-1/2 bg-green-600 text-white text-sm px-4 py-1 rounded-lg "><i class="fa-solid fa-phone"></i> Call</button>
+          <button class="points ml-auto w-1/2 bg-green-600 text-white text-sm px-4 py-1 rounded-lg "><i class="fa-solid fa-phone"></i> Call</button>
         </div>
       </div>
 
      
-     
-
-     
-
-
-
-     
-
-     
+    
 
     </div>
 
@@ -368,9 +361,9 @@
     <div class="w-full lg:w-[400px] h-[600px] lg:h-[1140px] bg-white rounded-lg shadow mt-4 p-6 flex flex-col gap-4 ">
       <div class="flex justify-between items-center mb-4">
         <p class="font-semibold text-gray-700"><i class="fa-regular fa-clock"></i> Call History</p>
-        <button class="bg-green-600 text-white px-4 py-1 rounded-xl ">Clear</button>
+        <button id="clear-btn" class=" bg-green-600 text-white px-4 py-1 rounded-xl ">Clear</button>
       </div>
-      <div class="flex flex-col gap-3">
+      <div id="call-history" class="flex flex-col gap-3">
         
         
         
@@ -383,6 +376,6 @@
 </div>
  
 
-   
+  <script src="functionality.js"></script> 
 </body>
 </html>
